@@ -237,7 +237,7 @@ namespace SImple_Calculator
         private void button12_Click(object sender, EventArgs e)
         {
             bool Success;
-            if (Op != Operation.None)
+            if (Op != Operation.None && Op != Operation.Equal)
             {
                 Success = double.TryParse(label2.Text, out double temp);
                 if (Success)
@@ -266,7 +266,7 @@ namespace SImple_Calculator
         private void button11_Click(object sender, EventArgs e)
         {
             bool Success;
-            if (Op != Operation.None)
+            if (Op != Operation.None && Op != Operation.Equal)
             {
                 Success = double.TryParse(label2.Text, out double temp);
                 if (Success)
@@ -295,7 +295,7 @@ namespace SImple_Calculator
         private void button10_Click(object sender, EventArgs e)
         {
             bool Success;
-            if (Op != Operation.None)
+            if (Op != Operation.None && Op != Operation.Equal)
             {
                 Success = double.TryParse(label2.Text, out double temp);
                 if (Success)
